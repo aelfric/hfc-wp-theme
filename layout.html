@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="reset.css" />
+		<link rel="stylesheet" href="style.css" />
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+		<script src="js/slides.min.jquery.js"></script>
+		<script>
+		$(function(){
+			$('#slides').slides({
+				play: 8000, 
+				preload: true,
+				preloadImage: '/img/loading.gif',
+				gnerateNextPrev: false,
+				pagination: false,
+				generatePagination: false,
+				crossfade: true,
+				hoverpPause: true
+			});
+		});
+	</script>
+		<title>HFC Layout Test</title>
+	</head>
+	<body>
+		<div class="container">
+			<div id="header" class="clearfix">
+				<div class="pink">
+					<a href="#" alt="Hope for Change" class="logo noselect">Hope for Change</a>
+					<ul>
+						<li><a href="#">home</a></li>
+						<li><a href="#">about</a></li>
+						<li><a href="#">news &amp; media</a></li>
+						<li><a href="#">contact</a></li>
+						<li><a href="#">support</a></li>
+					</ul>
+				</div>
+				<div class="pinkcor"></div>
+				<div class="slideshow_container">
+					<!--- Slideshow stuff goes here -->
+					<div id="slides">
+					  <div class="slides_container">
+						<div>
+						  <img src="slideshow/test1.jpg" width="922" height="279" alt="Slide 1">
+						</div>
+						<div>
+						  <img src="slideshow/test2.jpg" width="922" height="279" alt="Slide 2">
+						</div>
+					  </div>
+					</div>
+					<!-- End slideshow stuff -->
+				</div>
+				<div class="tealcor"></div>
+				<div class="teal clearfix">
+					a unique organization dedicated to breast cancer research
+					<img src="img/ribbon.png" class="noselect"/>
+				</div>
+			</div>
+			<div id="content_zone">
+				<!--- Content goes here -->
+				<div class="box b280">
+					<!--- sidebar with buttons --->
+					<a href="#">
+						<div class="rbut hp">The Hope Players</div>
+					</a>
+					<a href="#" class="eolink">
+						<div class="rbut eo">Educational Outreach</div>
+					</a>
+				</div>
+				<div class="box b640">
+					<!--- main content stuff -->
+					lalala
+				</div>
+			</div>
+			<div class="tealcor tealheight"></div>
+			<div class="tealspikes"></div>
+			<div id="footer">
+				<!--- Footer goes here -->
+				<div class="box col push1">
+					<ul>
+						<li><a href="#">home</a></li>
+						<li><a href="#">about us</a></li>
+						<li><a href="#">news &amp; media</a></li>
+						<li><a href="#">contact us</a></li>
+						<li><a href="#">support us</a></li>
+					</ul>
+				</div>
+				<div class="box col push1">
+					<ul>
+						<li><a href="#">the hope players</a></li>
+						<li><a href="#">educational outreach</a></li>
+					</ul>
+					
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
