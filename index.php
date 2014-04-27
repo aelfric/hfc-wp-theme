@@ -1,7 +1,6 @@
 <?php
 	get_header();
-	$slideshow = get_stylesheet_directory_uri().'/slideshow.inc';
-	include $slideshow;
+	include('slideshow.inc');
 ?>
 <div class="tealcor"></div>
 	<div class="teal">

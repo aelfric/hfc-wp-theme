@@ -4,8 +4,7 @@
 	*/
 	
 	get_header();
-	$slideshow = get_stylesheet_directory_uri().'/slideshow.inc';
-	include $slideshow;
+	include('slideshow.inc');
 	
 	define('WP_USE_THEMES', false);
 ?>
