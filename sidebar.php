@@ -16,7 +16,7 @@
 			} ?>
 		
 		<?php
-		//$output = wp_list_pages('echo=0&depth=1&title_li=' );
+		$output = NULL;
 		if (is_page()) {
 		  $page = $post->ID;
 		  if ($post->post_parent) {
