@@ -39,4 +39,7 @@
 		<a href="<?php echo get_permalink(17); ?>" class="eolink">
 			<div class="rbut eo">Educational Outreach</div>
 		</a>
+
+        <?php dynamic_sidebar( 'sidebar' ); ?>
+
 	</div>
