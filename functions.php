@@ -25,4 +25,16 @@
 		}
 
 	}
+
+    function theme_name_scripts() {
+        wp_enqueue_style( 'reset', get_stylesheet_directory_uri()."/reset.css");
+        wp_enqueue_style( 'main', get_stylesheet_uri() );
+        wp_enqueue_script( 'easing', "http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js", 
+            array('jquery'));
+        wp_enqueue_script( 'slideshow', get_stylesheet_directory_uri()."/js/slides.min.jquery.js",
+            array('jquery', 'easing'));
+    }
+
+    add_action( 'wp_enqueue_scripts', 'theme_name_scripts' );
+
 ?>
