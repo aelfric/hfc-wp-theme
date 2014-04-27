@@ -5,7 +5,6 @@
 	
 	get_header();
 	include('slideshow.inc');
-	define('WP_USE_THEMES', false);
 ?>
 
 <div class="tealcor"></div>
