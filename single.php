@@ -35,7 +35,7 @@
 				<?php
 					$comments = get_comments('post_id='.$post->ID);
 					foreach($comments as $comment) :
-					
+				if ($comment->approved != 0){	
 					// for comment byline
 					if($comment->comment_author_url!=NULL) {
 						$c_byline = '<a href="'.$comment->comment_author_url.' target="_blank">';
@@ -52,6 +52,7 @@
 					<span class="byline">Posted by <?php echo $c_byline; ?></span>
 					<?php echo $comment->comment_content; ?>
 				</div>
+<?php }?>
 						
 						
 				
