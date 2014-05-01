@@ -29,6 +29,7 @@
 			<span class="byline">Posted <?php the_time('F jS, Y') ?> by <?php the_author() ?></span>
 			<p><?php  the_content(); ?></p>
 			
+               <?php comments_template() ?>
 			<div class="singlepg_comments">
 				<?php comment_form(); ?>
 				
@@ -51,8 +52,8 @@
 				<div class="comment">
 					<span class="byline">Posted by <?php echo $c_byline; ?></span>
 					<?php echo $comment->comment_content; ?>
-				</div>
-<?php }?>
+                 </div>
+                 <?php }?>
 						
 						
 				
