@@ -19,7 +19,7 @@
 		<!--- news loop stuff -->
 		<?php
 		
-           posts_query('posts_per_page=5&category_name='.get_the_cat_slug()); 
+           query_posts('posts_per_page=5&category_name='.get_the_cat_slug()); 
            while (have_posts()) {
               the_post();
               get_template_part('content', get_post_format());
