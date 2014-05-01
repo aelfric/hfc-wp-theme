@@ -1,6 +1,6 @@
 <?php
 	// news sidebar		
-	$news_cat_id = 1;
+    $news_cat_id = 0;
 ?>
 <div id="content_zone">
 	<!--- Content goes here -->

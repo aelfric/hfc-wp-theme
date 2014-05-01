@@ -17,12 +17,15 @@
 <div class="box b640">
    <!--- news loop stuff -->
    <?php
-      $page_query = new WP_Query('posts_per_page=5'); 
-      while ($page_query->have_posts()) {
-         $page_query->the_post();
+      $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+      query_posts('posts_per_page=5i&paged='.$paged);
+      //$page_query = new WP_Query('posts_per_page=5'); 
+      while (have_posts()) {
+         the_post();
 
          get_template_part('content', get_post_format());
       }
+      posts_nav_link();
    ?>
 </div>
 </div>
