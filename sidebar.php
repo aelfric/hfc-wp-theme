@@ -3,7 +3,8 @@
 	<div class="box b280">
 		<!-- If a page has child pages, they go here. -->
 		
-		<?php	// print Hope Players button BEFORE sub menu on appropriate page.
+        <?php dynamic_sidebar( 'sidebar' );
+		    	// print Hope Players button BEFORE sub menu on appropriate page.
 				// this will print *after* every other submenu
 			$hopeplayers_flag = FALSE;
 			
@@ -40,6 +41,5 @@
 			<div class="rbut eo">Educational Outreach</div>
 		</a>
 
-        <?php dynamic_sidebar( 'sidebar' ); ?>
 
 	</div>

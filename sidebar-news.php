@@ -5,7 +5,7 @@
 <div id="content_zone">
 	<!--- Content goes here -->
 	<div class="box b280">
-<?php
+       <?php dynamic_sidebar('sidebar')
             $output = NULL;
 			// if the News & Media page has sub pages, lsit them with a "News & Media" header.  Only show this if there are subpages.
 			if (is_page()) {
@@ -40,5 +40,4 @@
 		<a href="<?php echo get_permalink(17); ?>" class="eolink">
 			<div class="rbut eo">Educational Outreach</div>
 		</a>
-        <?php dynamic_sidebar( 'sidebar' );  ?>
 	</div>
