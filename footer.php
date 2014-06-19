@@ -19,5 +19,6 @@
 				<div class="clearfix noselect">&nbsp;</div>
 			</div>
 		</div>
+        <?php wp_footer() ?>
 	</body>
 </html>
