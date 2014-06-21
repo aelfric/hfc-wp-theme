@@ -5,7 +5,7 @@
 <div id="content_zone">
 	<!--- Content goes here -->
 	<div class="box b280">
-       <?php dynamic_sidebar('sidebar')
+       <?php dynamic_sidebar('sidebar');
             $output = NULL;
 			// if the News & Media page has sub pages, lsit them with a "News & Media" header.  Only show this if there are subpages.
 			if (is_page()) {
