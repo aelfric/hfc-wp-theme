@@ -19,7 +19,7 @@
 			});
 		});
 	</script>
-		<title><?php bloginfo('name'); ?> - <?php wp_title(); ?></title>
+		<title><?php bloginfo('name'); ?> <?php wp_title(); ?></title>
 	</head>
 	<body scroll="auto">
 		<div class="container">
