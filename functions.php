@@ -55,4 +55,19 @@
 
     add_action('init', 'hfc_side_bar');
 
+    function email_button_shortcode($attributes, $content = nil){
+	    return render_theme_html_snippet('email_button.html',
+			    array('URL' => $attributes['url'],
+				    'TEXT' => $attributes['text'],));
+    }
+    add_shortcode('hfc_email_button', 'email_button_shortcode');
+
+    function render_theme_html_snippet($html_file, $vars) {
+	    $template = file_get_contents(get_stylesheet_directory().'/'.$html_file);
+	    foreach($vars as $key => $value){
+		    $template = str_replace("{{".$key."}}", $value, $template);
+	    }
+	    return $template;
+    }
+
 ?>
