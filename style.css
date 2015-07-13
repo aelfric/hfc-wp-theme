@@ -46,6 +46,12 @@
     font-style: normal;
 }
 
+@font-face{
+    font-family: "Grenadier NF";
+        src: url('fonts/GrenadierNF.ttf'),
+	    url('fonts/GrenadierNF.otf'); /* IE */
+	    }
+
 /*	GENERAL		*/
 
 img#ribbon { position: relative; z-index: 200; }
